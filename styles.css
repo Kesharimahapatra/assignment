@@ -1,0 +1,242 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+}
+
+.container {
+  background: white;
+  padding: 2% 6%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 33%;
+  position: relative;
+}
+
+h2 {
+  color: #ff6b82;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2::before,
+h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+  margin: 0 10px;
+}
+
+.offer-box {
+  padding: 15px;
+  background: white;
+  padding-bottom: 0 !important;
+}
+
+.offer {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: start;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid #ccc;
+  margin-bottom: 18px;
+  position: relative;
+  width: 100%;
+  font-size: larger;
+  font-family: sans-serif;
+  font-style: inherit;
+  font-weight: 500;
+}
+
+.offer:hover {
+  background: #f9f9f9;
+}
+
+.product-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6%;
+  border-radius: 8px;
+  /* background: #fff9fa; */
+  background: #faf8f9;
+}
+
+.offer input {
+  margin-right: 10px;
+}
+
+.offer input:checked + span {
+  border-color: #ff6b82 !important; /* Change border to #ff6b82 */
+}
+
+.offer.selected {
+  border-color: #ff6b82 !important; /* Apply when selected */
+  /* padding-bottom: 20px;  */
+  display: flex;
+  background-color: #fff9fa;
+}
+
+/* Change the default radio button appearance */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Change color when selected */
+input[type="radio"]:checked {
+  border-color: #ff6b82;
+  background-color: #ff6b82;
+}
+
+/* Inner dot effect */
+input[type="radio"]::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+/* Show inner dot when checked */
+input[type="radio"]:checked::before {
+  display: block;
+}
+
+.discount {
+  background: #ff6b82;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.pricediv {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+del {
+  font-size: 12px;
+  color: #d7cece;
+}
+
+.options,
+.options1st,
+.options2nd {
+  display: none;
+  /* margin-top: 10px; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6%;
+  padding-top: 0 !important;
+}
+
+.header-row {
+  display: flex;
+  font-size: medium;
+  gap: 6%;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.unitNo {
+  font-size: small;
+}
+
+select {
+  width: 90px; /* Adjust width */
+  padding: 4px;
+  border: 1px solid #dad5d5;
+  border-radius: 4px;
+  background: white;
+}
+
+.most-popular {
+  background: #ff6b82;
+  color: white;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 5px;
+  position: absolute;
+  top: -12px;
+  right: 10px;
+  font-weight: bold;
+}
+
+.footerdiv {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.free-delivery {
+  color: #ff6b82;
+  margin-top: 10px;
+}
+
+.total {
+  display: inline;
+  font-size: 18px;
+}
+
+.add-to-cart {
+  width: 100%;
+  background: #ff6b82;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-to-cart:hover {
+  background: #ff6b82;
+}

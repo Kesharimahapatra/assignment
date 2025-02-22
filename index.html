@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>YAY! It’s BOGO</h2>
+
+      <div class="offer-box">
+        <label class="offer">
+          <div class="product-input">
+            <div>
+              <input
+                type="radio"
+                name="unit"
+                value="1"
+                data-price="10"
+                checked
+              />
+              <span>1 Unit <span class="discount">10% Off</span></span>
+            </div>
+            <div class="pricediv">
+              <span class="price">$10.00 USD </span>
+              <del>$24.00 USD</del>
+            </div>
+          </div>
+          <div>
+            <div class="options" id="options">
+              <div class="header-row">
+                <span class="unit-placeholder"></span>
+                <span>Size</span>
+                <span style="margin-left: 11%">Colour</span>
+              </div>
+              <div class="option-row" style="margin-bottom: 1% !important">
+                <label class="unitNo">#1</label>
+                <select id="size1">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select id="color1">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+              <div class="option-row">
+                <label class="unitNo">#2</label>
+                <select id="size2">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select id="color2">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </label>
+
+        <label class="offer">
+          <span class="most-popular">MOST POPULAR</span>
+          <div class="product-input">
+            <div class="left-section">
+              <input type="radio" name="unit" value="2" data-price="18" />
+              <span>2 Unit <span class="discount">20% Off</span></span>
+            </div>
+            <div class="right-section pricediv">
+              <span class="price">$18.00 USD </span>
+              <del>$24.00 USD</del>
+            </div>
+          </div>
+
+          <div>
+            <div class="options1st" id="options1st">
+              <div class="header-row">
+                <span class="unit-placeholder"></span>
+                <span>Size</span>
+                <span style="margin-left: 11%">Colour</span>
+              </div>
+              <div class="option-row" style="margin-bottom: 1% !important">
+                <label class="unitNo">#1</label>
+                <select id="size1">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select id="color1">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+              <div class="option-row">
+                <label class="unitNo">#2</label>
+                <select id="size2">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select id="color2">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </label>
+
+        <label class="offer">
+          <div class="product-input">
+            <div>
+              <input type="radio" name="unit" value="3" data-price="24" />
+              <span>3 Unit <span class="discount">30% Off</span></span>
+            </div>
+            <div class="pricediv">
+              <span class="price">$24.00 USD </span>
+              <del>$24.00 USD</del>
+            </div>
+          </div>
+          <div class="options2nd" id="options2nd">
+            <div class="header-row">
+              <span class="unit-placeholder"></span>
+              <span>Size</span>
+              <span style="margin-left: 11%">Colour</span>
+            </div>
+            <div class="option-row" style="margin-bottom: 1% !important">
+              <label class="unitNo">#1</label>
+              <select id="size1">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <select id="color1">
+                <option>Black</option>
+                <option>White</option>
+                <option>Blue</option>
+              </select>
+            </div>
+            <div class="option-row">
+              <label class="unitNo">#2</label>
+              <select id="size2">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+              <select id="color2">
+                <option>Black</option>
+                <option>White</option>
+                <option>Blue</option>
+              </select>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="footerdiv">
+        <div class="footer">
+          <p class="free-delivery">Free Delivery</p>
+          <span>
+            <p class="total">Total: <span id="total-price">$00.00 USD</span></p>
+          </span>
+        </div>
+        <button class="add-to-cart">+ Add to Cart</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
